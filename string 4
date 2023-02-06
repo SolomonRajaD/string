@@ -1,15 +1,11 @@
-//program to multiply two floating point numbers
+//C Program to Find the Length of a String
 #include <stdio.h>
 int main() {
-    double a, b, product;
-    printf("Enter two numbers: ");
-    scanf("%lf %lf", &a, &b);  
- 
-    // Calculating product
-    product = a * b;
+    char s[] = "Programming is fun";
+    int i;
 
-    // %.2lf displays number up to 2 decimal point
-    printf("Product = %.2lf", product);
+    for (i = 0; s[i] != '\0'; ++i);
     
+    printf("Length of the string: %d", i);
     return 0;
 }
